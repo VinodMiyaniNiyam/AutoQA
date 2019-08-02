@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="testngTest">
+    <classes>
+      <class name="com.auto.tests.TC_Login_02"/>
+    </classes>
+  </test> <!-- testngTest -->
+  <test name="testngTest(failed)">
+    <classes>
+      <class name="com.auto.tests.TC_Login_02">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.auto.tests.TC_Login_02 -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

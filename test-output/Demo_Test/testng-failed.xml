@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Demo_Test]">
+  <test name="Demo">
+    <classes>
+      <class name="com.auto.baseClass.TC_Registration_01"/>
+    </classes>
+  </test> <!-- Demo -->
+</suite> <!-- Failed suite [Demo_Test] -->
