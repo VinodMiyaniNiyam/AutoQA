@@ -22,7 +22,7 @@ public class TC_Registration_01 extends BaseTest {
 	@Test
 	public void registrationShop() throws Exception {
 		RegistrationPage pageReg = new RegistrationPage();
-		pageReg.clickOnMyAccountMenu();
+		//pageReg.clickOnMyAccountMenu();
 		pageReg.registerShop(email, password);
 	}
 

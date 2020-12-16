@@ -1,5 +1,7 @@
 package com.auto.pageObject;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -93,8 +95,9 @@ public class RegistrationPage extends BaseTest implements registrationLocators {
 		waitFor5Sec();
 	}
 
-	public void clickOnMyAccountMenu() throws Exception {
+	public void clickOnLoginLink() throws Exception {
 		myAccount.click();
-		waitFor4Sec();
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//*[@id='login_register']/div/div[2]/ul/li[1]/a")).click();
 	}
 }

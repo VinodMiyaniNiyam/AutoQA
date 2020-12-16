@@ -15,7 +15,7 @@ public interface Locators {
 		String SUBMIT_BUTTON = "//*[@id='submitbtn']";
 		String EMAIL_SHOP = "//*[@id='reg_email']";
 		String PASSWORD_SHOP = "//*[@id='reg_password']";
-		String RESITER_BUTTON = "//*[@name='register']";
+		String RESITER_BUTTON = "/html/body/app-root/app-main/div/app-header/div/div/div/div[2]/div[1]/div[2]/div/ul/li[5]/a/span";
 		String MYACCOUNT = "//*[@id='menu-item-50']/a";
 	}
 

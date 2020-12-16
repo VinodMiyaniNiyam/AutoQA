@@ -1,0 +1,10 @@
+com\auto\locators\Locators.class
+com\auto\tests\Registration_Demo.class
+com\auto\utility\ReadPropertyConfig.class
+com\auto\locators\Locators$loginPageLocators.class
+com\auto\locators\Locators$registrationLocators.class
+com\auto\pageObject\LoginPage.class
+com\auto\pageObject\RegistrationPage.class
+com\auto\tests\TC_Login_02.class
+com\auto\baseClass\BaseTest.class
+com\auto\tests\TC_Registration_01.class

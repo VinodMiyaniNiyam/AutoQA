@@ -9,6 +9,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import com.auto.utility.ReadPropertyConfig;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 /*** Author : Bhargav Sathwara ****/
 public class BaseTest {
 
@@ -18,10 +20,11 @@ public class BaseTest {
 
 	@BeforeSuite
 	public static void setUp() {
-		System.setProperty("webdriver.chrome.driver", readPro.getChromeDriver());
+		//System.setProperty("webdriver.chrome.driver", readPro.getChromeDriver());
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 	}
 
 	@AfterSuite
@@ -31,7 +34,7 @@ public class BaseTest {
 
 	public void openBrowser(String url) {
 		driver.get(url);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
 	
 	public void openNewTab(){
